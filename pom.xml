@@ -65,6 +65,18 @@
         </dependency>
     </dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+			    <groupId>org.jenkins-ci.tools</groupId>
+				<artifactId>maven-hpi-plugin</artifactId>
+				<configuration>
+					<maskClasses>com.fasterxml.jackson. org.glassfish.jersey.</maskClasses>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
